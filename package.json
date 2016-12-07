@@ -1,0 +1,42 @@
+{
+  "name": "tbdss",
+  "version": "1.0.0",
+  "description": "Twitter-Based Dengue Surveillance System",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eriksjaastad/indulge.git"
+  },
+  "keywords": [
+    "real-time",
+    "surveillance",
+    "dengue",
+    "surveillance",
+    "thesis"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eriksjaastad/indulge/issues"
+  },
+  "homepage": "https://github.com/eriksjaastad/indulge#readme",
+  "dependencies": {
+    "angular-route": "^1.4.3",
+    "angular": "^1.4.3",
+    "express": "^4.12.4",
+    "mongodb": "^2.0.39",
+    "socket.io": "^1.3.6",
+    "twitter": "^1.2.5"
+  },
+  "devDependencies": {
+    "angular": "^1.4.3",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.3",
+    "gulp-webpack": "^1.5.0",
+    "sass": "^0.5.0",
+    "webpack": "^1.10.1"
+  }
+}
