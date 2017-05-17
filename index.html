@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TBDSS</title>
+    <meta name="description" content="Twitter-Based Dengue Surveillance System">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/application.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/homescreen-icon.png" />
+    <script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+  </head>
+  <body data-ng-app="indulgeApp">
+    <header class="slideDown clearfix">
+       <div class="nav-wrapper">
+      <section class="icon-menu"></section>
+     <!--  <ul class="clearfix">
+       
+        <a href="#/about"><li class="icon-info"></li></a>
+      </ul> -->
+      
+
+      <a href="/" class="brand-logo"><i class="icon-location2"></i>TBDSS</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+         <a href="#/about"><li class="icon-info"></li>About</a>
+    </div>
+     <!--  <h1 class="logo">
+        <section class="icon-location2"></section>
+        <section class="logoText">TBDSS</section>
+      </h1> -->
+      <h2 class="brand-logo">Twitter-Based Dengue Surveillance System</h2>
+    </header>
+    <!-- <div class="mask is-active"></div> -->
+    <main data-ng-controller="mapController">
+      <!-- <article class="welcome" data-about-directive></article> -->
+      <section id="map-container"></section>
+      <article class="tweetList is-active" id="tweetList" data-tweets-directive></article>
+  
+      <aside style="font-size:larger;font-style:italic;color:green;float:right;width:35%;padding-left:5px;">
+       <p><span id="total" class="controls">0</span> tweets displayed</p>
+      </aside>
+
+      <!-- <span id="total">0</span> tweets displayed -->
+      <section id="map"></section>
+      <div data-ng-view></div>
+    </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+  <script src="markerclusterer.js"></script>
+  <script src="search.js"></script>
+  <script src="jquery.ui.map.js"></script>
+  <script src="js/bundle.js"></script>
+  </body>
+</html>
